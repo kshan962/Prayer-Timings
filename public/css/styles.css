@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 40px;
+    margin: 20px; /* Add margin to prevent cutting off on small screens */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin to separate from prayer times */
+}
+
+input[type="text"] {
+    margin-top: 100px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 100%; /* Use full width of container */
+    max-width: 400px; /* Limit maximum width */
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    margin-top: 100px;
+    border-color: #00f2fe;
+    outline: none;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background: #4facfe;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #00f2fe;
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+}
+
+/* Prayer Times Styles */
+.prayer-times {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.prayer-times h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.prayer-times ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.prayer-times li {
+    background: #f7f7f7;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prayer-times li strong {
+    color: #4facfe;
+}
+
+.error {
+    color: red;
+    margin-top: 20px;
+    font-weight: bold;
+}
